@@ -3,6 +3,7 @@ configMap:
   namePostfix: 'zkimport'
   data:
     zk_import_settings.conf: |-
+      {{- tpl (merge (include "getFirstValues" .) (include "getSecondValues" .)) . | nindent 6 }}
       /settings=
       /settings/background-bizprocess-kz.service.url=selenium-new01.ofd.ld
       /settings/background-bizprocess-kzt.service.connection.timeout=10000

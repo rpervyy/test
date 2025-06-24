@@ -1,17 +1,13 @@
-configMap:
-  enabled: true
-  namePostfix: 'zkimport'
-  data:
-    zk_import_settings.conf: |-
-      /settings=
-      /settings/background-bizprocess-kz.service.url=selenium-new01.ofd.ld
-      /settings/background-bizprocess-kzt.service.connection.timeout=10000
-      /settings/authoritydb.dbname=authority_db
-      /settings/authoritydb.host=selenium-new03.ofd.ld
-      /settings/authoritydb.pass=maintenance
-      /settings/authoritydb.port=5432
-      /settings/authoritydb.user=maintenance
-      /settings/email_svc.dbname=email_db
-      /settings/email_svc.host=selenium-new03.ofd.ld
-      /settings/email_svc.pass=email_user
-      /settings/email_svc.port=5432
+zkSettings: |
+  /settings=
+  /settings/background-bizprocess-kz.service.url=selenium-new01.ofd.ld
+  /settings/background-bizprocess-kzt.service.connection.timeout=10000
+  /settings/authoritydb.dbname=authority_db
+  /settings/authoritydb.host=selenium-new03.ofd.ld
+  /settings/authoritydb.pass=maintenance
+  /settings/authoritydb.port=5432
+  /settings/authoritydb.user=maintenance
+  /settings/email_svc.dbname=email_db
+  /settings/email_svc.host=selenium-new03.ofd.ld
+  /settings/email_svc.pass=email_user
+  /settings/email_svc.port=5432
